@@ -16,6 +16,51 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Accountflag"
+            android:label="@string/title_activity_accountflag"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".AddInaccount"
+            android:label="@string/title_activity_add_inaccount"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".AddOutaccount"
+            android:label="@string/title_activity_add_outaccount"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".FlagManage"
+            android:label="@string/title_activity_flag_manage"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".Inaccountinfo"
+            android:label="@string/title_activity_inaccountinfo"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".Login"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".Outaccountinfo"
+            android:label="@string/title_activity_outaccountinfo"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".Showinfo"
+            android:label="@string/title_activity_showinfo"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".Sysset"
+            android:label="@string/title_activity_sysset"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
     </application>
 
 </manifest>

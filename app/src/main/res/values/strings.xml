@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">AccountMS</string>
+    <string name="title_activity_accountflag">Accountflag</string>
+    <string name="title_activity_add_inaccount">AddInaccount</string>
+    <string name="title_activity_add_outaccount">AddOutaccount</string>
+    <string name="title_activity_flag_manage">FlagManage</string>
+    <string name="title_activity_inaccountinfo">Inaccountinfo</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_outaccountinfo">Outaccountinfo</string>
+    <string name="title_activity_showinfo">Showinfo</string>
+    <string name="title_activity_sysset">Sysset</string>
 </resources>
