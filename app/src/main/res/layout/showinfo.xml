@@ -44,10 +44,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_weight="0.06">
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
+
             <Button
                 android:id="@+id/btnoutinfo"
                 android:text="支出信息"
@@ -55,6 +52,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
                 android:textColor="#08aee6"
+                android:layout_weight="1"
                 />
 
             <Button
@@ -64,8 +62,8 @@
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
                 android:textColor="#08aee6"
-                android:layout_toRightOf="@+id/btnoutinfo"
-                android:layout_marginLeft="36dp"/>
+                android:layout_weight="1"
+              />
 
             <Button
                 android:id="@+id/btnflginfo"
@@ -74,10 +72,10 @@
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
                 android:textColor="#08aee6"
-                android:layout_toRightOf="@id/btnininfo"
-                android:layout_marginLeft="36dp"/>
+                android:layout_weight="1"
+              />
 
-        </RelativeLayout>
+
 
     </LinearLayout>
 

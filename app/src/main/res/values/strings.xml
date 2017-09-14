@@ -9,4 +9,6 @@
     <string name="title_activity_outaccountinfo">Outaccountinfo</string>
     <string name="title_activity_showinfo">Showinfo</string>
     <string name="title_activity_sysset">Sysset</string>
+    <string name="title_activity_outaccount_infomanage">OutaccountInfomanage</string>
+    <string name="title_activity_inaccount_infomanage">InaccountInfomanage</string>
 </resources>

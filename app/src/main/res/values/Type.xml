@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Type">
+        <item>工资</item>
+        <item>奖金</item>
+        <item>租金</item>
+        <item>兼职</item>
+        <item>股票</item>
+        <item>报销款</item>
+        <item>其他</item>
+    </string-array>
+</resources>

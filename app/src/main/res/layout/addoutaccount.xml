@@ -71,7 +71,6 @@
                 android:layout_marginTop="26dp"
                 android:layout_toEndOf="@+id/tvOutMoney"
                 android:layout_toRightOf="@+id/tvOutMoney"
-                android:hint="2000.00"
                 android:inputType="number"
                 android:maxLength="9"
                 android:numeric="integer" />
@@ -96,7 +95,6 @@
                 android:layout_marginTop="22dp"
                 android:layout_toEndOf="@+id/tvOutTime"
                 android:layout_toRightOf="@+id/tvOutTime"
-                android:hint="2017-09-14"
                 android:inputType="datetime" />
 
             <TextView
