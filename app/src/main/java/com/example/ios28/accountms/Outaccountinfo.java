@@ -59,7 +59,7 @@ public class Outaccountinfo extends Activity {
         for (Tb_outaccount tb_outaccount : listoutinfos) {
 
             strInfos[i] = tb_outaccount.getid() + "|" + tb_outaccount.getType()
-                    + " " + String.valueOf(tb_outaccount.getMoney()) + "Ԫ     "
+                    + " " + String.valueOf(tb_outaccount.getMoney()) + "元 "
                     + tb_outaccount.getTime();
             i++;
         }
