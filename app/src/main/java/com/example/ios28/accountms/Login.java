@@ -20,13 +20,14 @@ import com.example.ios28.accountms.AccountDAO.PwdDAO;
 public class Login extends AppCompatActivity {
 
     EditText txtlogin;
-    Button btnlogin;
+    Button btnlogin,btnClose;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
         txtlogin = (EditText)findViewById(R.id.txtLogin);
         btnlogin = (Button)findViewById(R.id.btnLogin);
+        btnClose = (Button)findViewById(R.id.btnClose);
         btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -45,6 +46,12 @@ public class Login extends AppCompatActivity {
                     }
                 }
                 txtlogin.setText("");
+            }
+        });
+        btnClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
             }
         });
     }

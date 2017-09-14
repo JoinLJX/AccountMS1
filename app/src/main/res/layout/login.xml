@@ -40,7 +40,7 @@
             android:id="@+id/btnClose"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="取消"
+            android:text="退出"
             android:layout_margin="9dp"
             android:background="#faad87"
             />

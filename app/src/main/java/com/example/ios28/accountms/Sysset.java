@@ -48,6 +48,7 @@ public class Sysset extends AppCompatActivity {
             public void onClick(View view) {
                 txtpwd.setText("");
                 txtpwd.setHint("请输入密码");
+                finish();
             }
         });
     }
