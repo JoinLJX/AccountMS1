@@ -1,4 +1,4 @@
-package com.example.ios28.accountms;
+package com.example.ios28.accountms.model;
 
 /**
  * Created by ios28 on 17/9/13.
