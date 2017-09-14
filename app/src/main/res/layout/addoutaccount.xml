@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:id="@+id/outitem"
-              android:layout_width="fill_parent"
-              android:layout_height="fill_parent"
-              android:orientation="vertical">
+    android:id="@+id/outitem"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -71,6 +71,7 @@
                 android:layout_marginTop="26dp"
                 android:layout_toEndOf="@+id/tvOutMoney"
                 android:layout_toRightOf="@+id/tvOutMoney"
+
                 android:inputType="number"
                 android:maxLength="9"
                 android:numeric="integer" />
@@ -95,6 +96,7 @@
                 android:layout_marginTop="22dp"
                 android:layout_toEndOf="@+id/tvOutTime"
                 android:layout_toRightOf="@+id/tvOutTime"
+                android:hint="2017-09-14"
                 android:inputType="datetime" />
 
             <TextView
@@ -120,7 +122,7 @@
                 android:id="@+id/tvOutHandler"
                 android:layout_width="90dp"
                 android:layout_height="wrap_content"
-                android:text="付款方："
+                android:text="支出地："
                 android:textSize="20sp"
                 android:layout_alignBaseline="@+id/txtOutHandler"
                 android:layout_alignBottom="@+id/txtOutHandler"

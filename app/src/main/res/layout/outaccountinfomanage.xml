@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:layout_height="fill_parent"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/outitem"
     android:layout_width="fill_parent"
-    android:orientation="vertical"
-    android:id="@+id/initem"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -37,12 +38,12 @@
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:background="#030303" />
+
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:orientation="vertical"
         android:layout_weight="1"
-        >
+        android:orientation="vertical">
 
         <RelativeLayout
             android:layout_width="fill_parent"
@@ -50,110 +51,115 @@
             android:padding="10dp">
 
             <TextView
-                android:id="@+id/tvInOutMoney"
+                android:id="@+id/tvOutMoney"
                 android:layout_width="90dp"
                 android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/txtInOutMoney"
-                android:layout_alignBottom="@+id/txtInOutMoney"
+                android:layout_alignBaseline="@+id/txtOutMoney"
+                android:layout_alignBottom="@+id/txtOutMoney"
                 android:layout_alignParentLeft="true"
-                android:layout_marginLeft="16dp"
-                android:text="金   额："
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:text="金    额："
                 android:textSize="20sp" />
 
             <EditText
-                android:id="@+id/txtInOutMoney"
+                android:id="@+id/txtOutMoney"
                 android:layout_width="210dp"
                 android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="26dp"
+                android:layout_toEndOf="@+id/tvOutMoney"
+                android:layout_toRightOf="@+id/tvOutMoney"
+
                 android:inputType="number"
                 android:maxLength="9"
-                android:numeric="integer"
-                android:layout_above="@+id/txtInOutTime"
-                android:layout_toRightOf="@+id/tvInOutMoney"
-                android:layout_toEndOf="@+id/tvInOutMoney"
-                android:layout_marginBottom="16dp" />
+                android:numeric="integer" />
 
             <TextView
-                android:id="@+id/tvInOutTime"
+                android:id="@+id/tvOutTime"
                 android:layout_width="90dp"
                 android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/txtInOutTime"
-                android:layout_alignBottom="@+id/txtInOutTime"
-                android:layout_toLeftOf="@+id/txtInOutMoney"
-                android:text="时   间："
+                android:layout_alignBaseline="@+id/txtOutTime"
+                android:layout_alignBottom="@+id/txtOutTime"
+
+                android:layout_toLeftOf="@+id/txtOutMoney"
+                android:layout_toStartOf="@+id/txtOutMoney"
+                android:text="时    间："
                 android:textSize="20sp" />
 
             <EditText
-                android:id="@+id/txtInOutTime"
+                android:id="@+id/txtOutTime"
                 android:layout_width="210dp"
                 android:layout_height="wrap_content"
-                android:inputType="datetime"
-                android:layout_above="@+id/tvInOutType"
-                android:layout_toRightOf="@+id/tvInOutTime"
-                android:layout_toEndOf="@+id/tvInOutTime"
-                android:layout_marginBottom="28dp" />
+                android:layout_below="@+id/txtOutMoney"
+                android:layout_marginTop="22dp"
+                android:layout_toEndOf="@+id/tvOutTime"
+                android:layout_toRightOf="@+id/tvOutTime"
+
+                android:inputType="datetime" />
 
             <TextView
-                android:id="@+id/tvInOutType"
+                android:id="@+id/tvOutType"
                 android:layout_width="90dp"
                 android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/spInOutType"
-                android:layout_alignBottom="@+id/spInOutType"
-                android:layout_toLeftOf="@+id/txtInOutTime"
-                android:text="类   别："
+                android:layout_alignBaseline="@+id/spOutType"
+                android:layout_alignBottom="@+id/spOutType"
+                android:layout_alignLeft="@id/tvOutTime"
+                android:text="类    别："
                 android:textSize="20sp" />
 
             <Spinner
-                android:id="@+id/spInOutType"
+                android:id="@+id/spOutType"
                 android:layout_width="210dp"
                 android:layout_height="wrap_content"
-                android:entries="@array/Type"
-                android:textColor="#000000"
-                android:layout_above="@+id/txtInOutHandler"
-                android:layout_toRightOf="@+id/tvInOutType"
-                android:layout_toEndOf="@+id/tvInOutType"
-                android:layout_marginBottom="31dp" />
+                android:layout_below="@+id/txtOutTime"
+                android:layout_marginTop="28dp"
+                android:layout_toRightOf="@+id/tvOutType"
+                android:entries="@array/InType" />
 
             <TextView
-                android:id="@+id/tvInOutHandler"
+                android:id="@+id/tvOutHandler"
                 android:layout_width="90dp"
                 android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/txtInOutHandler"
-                android:layout_alignBottom="@+id/txtInOutHandler"
-                android:layout_toLeftOf="@+id/spInOutType"
-                android:text="付款方："
-                android:textSize="20sp" />
+                android:text="支出地："
+                android:textSize="20sp"
+                android:layout_alignBaseline="@+id/txtOutHandler"
+                android:layout_alignBottom="@+id/txtOutHandler"
+                android:layout_toLeftOf="@+id/spOutType"
+                android:layout_toStartOf="@+id/spOutType" />
 
             <EditText
-                android:id="@+id/txtInOutHandler"
+                android:id="@+id/txtOutHandler"
                 android:layout_width="210dp"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="34dp"
                 android:singleLine="false"
-                android:layout_marginBottom="30dp"
-                android:layout_above="@+id/txtInOutMark"
-                android:layout_toRightOf="@+id/tvInOutHandler"
-                android:layout_toEndOf="@+id/tvInOutHandler" />
+                android:layout_below="@+id/spOutType"
+                android:layout_toRightOf="@+id/tvOutHandler"
+                android:layout_toEndOf="@+id/tvOutHandler" />
 
             <TextView
-                android:id="@+id/tvInOutMark"
+                android:id="@+id/tvOutMark"
                 android:layout_width="90dp"
                 android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/txtInOutMark"
-                android:layout_alignBottom="@+id/txtInOutMark"
-                android:layout_toLeftOf="@+id/txtInOutMark"
-                android:layout_toStartOf="@+id/txtInOutMark"
-                android:text="备   注："
-                android:textSize="20sp" />
+                android:text="备    注："
+                android:textSize="20sp"
+                android:layout_alignBaseline="@+id/txtOutMark"
+                android:layout_alignBottom="@+id/txtOutMark"
+                android:layout_toLeftOf="@+id/txtOutHandler"
+                android:layout_toStartOf="@+id/txtOutHandler" />
 
             <EditText
-                android:id="@+id/txtInOutMark"
+                android:id="@+id/txtOutMark"
                 android:layout_width="210dp"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/txtOutHandler"
+                android:layout_marginTop="36dp"
+                android:layout_toEndOf="@+id/tvOutMark"
+                android:layout_toRightOf="@+id/tvOutMark"
                 android:gravity="top"
-                android:singleLine="false"
-                android:layout_alignParentBottom="true"
-                android:layout_alignLeft="@+id/txtInOutHandler"
-                android:layout_alignStart="@+id/txtInOutHandler"
-                android:layout_marginBottom="66dp" />
+                android:singleLine="false" />
         </RelativeLayout>
     </LinearLayout>
 
@@ -169,27 +175,26 @@
             android:padding="10dp">
 
             <Button
-                android:id="@+id/btnInOutDelete"
+                android:id="@+id/btnOutUpdate"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-
                 android:layout_marginLeft="20dp"
-                android:text="删 除"
+                android:text="修 改"
+                android:layout_marginStart="20dp"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="20dp" />
+                android:layout_alignParentStart="true" />
 
             <Button
-                android:id="@+id/btnInOutEdit"
+                android:id="@+id/btnOutDel"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="修 改"
+                android:text="删 除"
+                android:layout_marginRight="18dp"
+                android:layout_marginEnd="18dp"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginRight="16dp"
-                android:layout_marginEnd="16dp" />
+                android:layout_alignParentEnd="true" />
         </RelativeLayout>
 
     </LinearLayout>
