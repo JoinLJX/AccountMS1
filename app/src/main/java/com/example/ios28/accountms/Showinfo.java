@@ -2,10 +2,7 @@ package com.example.ios28.accountms;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -76,7 +73,7 @@ public class Showinfo extends AppCompatActivity {
                     intent.putExtra(FLAG, strid);
                 }
                 else if (strType=="btnininfo"){
-                    intent = new Intent(Showinfo.this, OutaccountInfomanage.class);
+                    intent = new Intent(Showinfo.this, InaccountInfomanage.class);
                     intent.putExtra(FLAG, new String[] { strid, strType });
                 }
                 startActivity(intent);

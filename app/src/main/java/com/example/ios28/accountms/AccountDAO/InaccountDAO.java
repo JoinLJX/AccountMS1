@@ -35,11 +35,11 @@ public class InaccountDAO {
         db = helper.getWritableDatabase();
 
         //执行添加收入信息操作
-        db.execSQL("insert into tb_inaccount(_id,money,time,type,handler,mark) value(?,?,?,?,?,?)",
-                new Object[]{
-                        tb_inaccount.get_id(),tb_inaccount.getMoney(),tb_inaccount.getTime(),
-                        tb_inaccount.getType(),tb_inaccount.getHandler(),tb_inaccount.getMark()
-                });
+        db.execSQL(
+                "insert into tb_inaccount (_id,money,time,type,handler,mark) values (?,?,?,?,?,?)",
+                new Object[] { tb_inaccount.get_id(), tb_inaccount.getMoney(),
+                        tb_inaccount.getTime(), tb_inaccount.getType(),
+                        tb_inaccount.getHandler(), tb_inaccount.getMark() });
     }
 
 
@@ -52,11 +52,11 @@ public class InaccountDAO {
         db = helper.getWritableDatabase();
 
         //执行修改收入信息的操作
-        db.execSQL("update tb_inaccount set money = ?,time = ?,type = ?,handler = ?,mark = ?,"+
-        " where _id = ?",new Object[]{
-                tb_inaccount.getMoney(),tb_inaccount.getTime(),tb_inaccount.getType(),
-                tb_inaccount.getHandler(),tb_inaccount.getMark(),tb_inaccount.get_id()
-        });
+        db.execSQL(
+                "update tb_inaccount set money = ?,time = ?,type = ?,handler = ?,mark = ? where _id = ?",
+                new Object[] { tb_inaccount.getMoney(), tb_inaccount.getTime(),
+                        tb_inaccount.getType(), tb_inaccount.getHandler(),
+                        tb_inaccount.getMark(), tb_inaccount.get_id() });
     }
 
     /**
@@ -67,18 +67,20 @@ public class InaccountDAO {
     public Tb_inaccount find(int id)
     {
         db = helper.getWritableDatabase();
-        Cursor cursor = db.rawQuery("select _id,money,time,type,handler,mark from tb_inaccount" +
-                " where _id = ?",new String[]{
-                String.valueOf(id)
-        });
-        if(cursor.moveToNext()){
-            //将遍历到的收入信息存储到 Tb_inaccount类中
-            return new Tb_inaccount(cursor.getInt(cursor.getColumnIndex("_id")),
+        Cursor cursor = db
+                .rawQuery(
+                        "select _id,money,time,type,handler,mark from tb_inaccount where _id = ?",
+                        new String[] { String.valueOf(id) });
+        if (cursor.moveToNext())
+        {
+
+            return new Tb_inaccount(
+                    cursor.getInt(cursor.getColumnIndex("_id")),
                     cursor.getDouble(cursor.getColumnIndex("money")),
-                            cursor.getString(cursor.getColumnIndex("time")),
-                                    cursor.getString(cursor.getColumnIndex("type")),
-                                            cursor.getString(cursor.getColumnIndex("handler")),
-                                                    cursor.getString(cursor.getColumnIndex("mark")));
+                    cursor.getString(cursor.getColumnIndex("time")),
+                    cursor.getString(cursor.getColumnIndex("type")),
+                    cursor.getString(cursor.getColumnIndex("handler")),
+                    cursor.getString(cursor.getColumnIndex("mark")));
         }
         return null;
     }
