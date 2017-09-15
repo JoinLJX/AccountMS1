@@ -112,7 +112,7 @@
                 android:layout_below="@+id/txtInTime"
                 android:layout_marginTop="28dp"
                 android:layout_toRightOf="@+id/tvInType"
-                android:entries="@array/InType" />
+                android:entries="@array/Type" />
 
             <TextView
                 android:id="@+id/tvInHandler"
