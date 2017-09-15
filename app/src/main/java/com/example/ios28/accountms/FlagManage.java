@@ -52,6 +52,7 @@ public class FlagManage extends AppCompatActivity {
             public void onClick(View view) {
                 flagDAO.detele(Integer.parseInt(strid));
                 Toast.makeText(FlagManage.this,"【便签数据】删除成功!",Toast.LENGTH_SHORT).show();
+                finish();
             }
         });
 
