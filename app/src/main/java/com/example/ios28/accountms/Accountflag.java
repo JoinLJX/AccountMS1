@@ -53,6 +53,7 @@ public class Accountflag extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 txtFlag.setText("");//清空文本框
+                finish();
             }
         });
 
