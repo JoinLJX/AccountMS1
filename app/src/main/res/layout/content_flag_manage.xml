@@ -63,7 +63,7 @@
                 android:id="@+id/txtFlagManage"
                 android:layout_width="match_parent"
                 android:layout_height="400dp"
-                android:layout_below="@+id/tvFlag"
+                android:layout_below="@+id/tvFlagManage"
                 android:gravity="top"
                 android:singleLine="true" />
 

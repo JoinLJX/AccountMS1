@@ -130,7 +130,7 @@ public class Showinfo extends AppCompatActivity {
 
                     strInfos[n] = tb_flag.getid() + "|" + tb_flag.getFlag();
                     if (strInfos[n].length() > 15)
-                        strInfos[n] = strInfos[n].substring(0, 15) + "元";
+                        strInfos[n] = strInfos[n].substring(0, 15) + "……";
                     n++;
                 }
                 break;
