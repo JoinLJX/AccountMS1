@@ -23,7 +23,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:text="支出管理"
+            android:text="收入管理"
             android:textColor="#686765"
             android:textSize="40sp"
             android:textStyle="bold"

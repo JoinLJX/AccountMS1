@@ -68,6 +68,7 @@ public class AddInaccount extends Activity {
 
                     Toast.makeText(AddInaccount.this, "保存成功",
                             Toast.LENGTH_SHORT).show();
+                    finish();
                 } else {
                     Toast.makeText(AddInaccount.this, "请输入金额",
                             Toast.LENGTH_SHORT).show();
