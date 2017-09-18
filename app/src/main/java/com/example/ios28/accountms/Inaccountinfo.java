@@ -51,7 +51,7 @@ public class Inaccountinfo extends AppCompatActivity {
         int m = 0;
         for (Tb_inaccount tb_inaccount : listinfos) {
             strInfos[m] = tb_inaccount.get_id() + "|" + tb_inaccount.getType()
-                    + " " + String.valueOf(tb_inaccount.getMoney()) + "Ԫ     "
+                    + " " + String.valueOf(tb_inaccount.getMoney()) + "元"
                     + tb_inaccount.getTime();
             m++;//
         }
